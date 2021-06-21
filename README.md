@@ -1,1 +1,1 @@
-# 2021-scipy-poster-ScentificWorkflowDescription
+# 2021-scipy-poster-ScientificWorkflowDescription
