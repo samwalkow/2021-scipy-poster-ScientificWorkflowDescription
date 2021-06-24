@@ -91,9 +91,9 @@ Here's some yt examples:
     https://arxiv.org/abs/1807.07579
     (Evan O’Connor and Sean Couch, MSU)
     
-<img src="images/weatherradar.png" align="right" width="500"/>
+<img src="images/weatherradar.png" align="right" width="200"/>
 
-<img src="images/supernova.png" align="left" width="500"/>
+<img src="images/supernova.png" align="left" width="200"/>
 
 
 
@@ -132,7 +132,7 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 - [@samwalkow](https://twitter.com/SamWalkow)
 - swalkow2@illinois.edu
 
-<img src="images/swalkow_dec2020.jpg" align="left" width="250"/>
+<img src="images/swalkow_dec2020.jpg" align="left" width="50"/>
 
 #### Chris Havlin
 
@@ -160,23 +160,14 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 
 
 ```python
-%%html
-<style>
-@import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
-   div.jp-MarkdownOutput {font-family: "Nanum Gothic"; font-size: 200%;}
-</style>
+# %%html
+# <style>
+# @import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
+#    div.jp-MarkdownOutput {font-family: "Nanum Gothic"; font-size: 200%;}
+# </style>
 
 
 ```
-
-
-<style>
-@import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
-   div.jp-MarkdownOutput {font-family: "Nanum Gothic"; font-size: 200%;}
-</style>
-
-
-
 
 
 ```python
