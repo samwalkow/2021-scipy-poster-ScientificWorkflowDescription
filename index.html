@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Scientific Workflow Description</title>
+<style>
+img {width: 100%;}
+</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
+body {font-family: "Nanum Gothic"; font-size: 1.25em;}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="content">
+        </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const renderer = {
+        hr() {
+            return `</div></div><div class="row my-3"><div class="col">`;
+        }
+    };
+    marked.use({ renderer });
+    window.addEventListener('DOMContentLoaded', (event) => {
+        //fetch('./README.md')
+        fetch('./ScientificWorkflowDescription_SciPy2021.md')
+        .then(response => response.text())
+        .then(data => {document.getElementById('content').innerHTML = 
+                "<div class='row'><div class='col'>" + marked(data) + "</div></div>";});
+    });
+  </script>
+</body>
+</html>
