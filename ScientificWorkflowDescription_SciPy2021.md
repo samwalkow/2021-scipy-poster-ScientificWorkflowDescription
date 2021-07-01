@@ -45,13 +45,14 @@ yt (https://yt-project.org/) is an open source python library designed for scien
 
 Here's some yt examples:
 
-    Supernova Ignition Simulation
-    https://arxiv.org/abs/1807.07579
-    (Evan O’Connor and Sean Couch, MSU)
+        Mantle convection in a spherical shell calculated with ASPECT. 
+        Temperature field overlaid with velocity vectors (black) 
+        and adaptively refined mesh
+        (Chris Havlin, University of Illinois at Urbana-Champaign)
     
 <img src="images/weatherradar.png" align="right" width="500"/>
 
-<img src="images/supernova.png" align="left" width="500"/>
+<img src="images/ytAspect.png" align="left" width="650"/>
 
 
 
@@ -61,41 +62,48 @@ Here's some yt examples:
                                                                                                    Leigh Orf (University of Wisconsin),
                                                                                                                  Image Credit: NCSA AVL
 
+### Using JSON as an Interface
 
 
-#### Using JSON as an Interface
+<img src="images/ytSlicePlotJSONEntry.gif" align="right" width="500"/>
 
 JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned. 
 
 **The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce. 
 
-Here's an example using VSCode:
-
-<img src="images/ytSlicePlotJSONEntry.gif" align="center" width="500"/>
 
 
-#### The Analysis Schema
+### The Analysis Schema
+
+<img src="images/ytSchemaTitle.png" align="left" width="400"/>
+
+<br>
 
 The analysis schema design provides a structured grammar from which users can describe and tell the story of their data analysis. It's meant to connect with the users understanding of the data, while accessing the code it needs to run the analysis. **The schema has been developed to be flexible so users are free to complete operations in any order, while working in a structured schema which ensures the input to the JSON interface is valid and can be run in code**. This helps eliminate syntax issues, code run out of order issues, and lowers the barrier to usage. 
 
+<br>
+
 While the description are separate from yt, the mental model behind the data selection, transformation, and logic remain connected to yt. We change how users can access those operations, but not how yt handles the data it receives. In this way, users are learning how yt thinks and understands data input, while using description and their domain knowledge to reasoon with the data and the returned output.
 
-**By providing an additional layer between the user and the imperative code, he goal of the analysis schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
+<br>
 
-<img src="images/ytSlicePlotSchema.png" align="center" width="500"/>
+**By providing an additional layer between the user and the imperative code, the goal of the analysis schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
 
 #### Connecting Existing Software to Declarative Description
 
 How does the description reach and run the software? Data classes, type hinting, and schema models (all using Pydantic) are the core pieces that the analysis schema functions on. The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface. The JSON schema used for the description contains key words, which are relayed back to the code and used to run the code with user input as arguments. This code is run and output is displayed to the user. 
 
 
-<img src="images/ytSlicePlotJSONEntry.gif" align="left" width="500"/>
-<img src="images/ytSlicePlotAnalysisSchema.gif" align="center" width="500"/>
+ JSON Interface and Ouput  | Analysis Schema File
+- | - 
+![alt](images/ytSlicePlotJSONEntry.gif)![alt](images/ytSlicePlotAnalysisSchema.gif)| ![alt](images/LongSlicePlot.png)
 
 
-```python
+### Supporting Workflows and Software
 
-```
+**The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema. In addition to a responsive browser interface, you can also submit the configuration file through the command line and produce output as image files. 
+
+<img src="images/ConfigFile.gif" align="center" width="600"/>
 
 ### Domain Contexts - Beyond Astrophysics
 
