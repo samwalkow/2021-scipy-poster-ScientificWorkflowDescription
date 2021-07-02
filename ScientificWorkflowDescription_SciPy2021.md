@@ -190,7 +190,7 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
 
 #### Contact:
-- [@chrishavlin](https://twitter.com/s_i_r_h_c)
+- [@s_i_r_h_c](https://twitter.com/s_i_r_h_c)
 - chavlin@illinois.edu 
 - [chrishavlin.github.io](https://chrishavlin.github.io/)
 
