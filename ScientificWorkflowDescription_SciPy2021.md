@@ -81,6 +81,7 @@ Here's some yt examples:
 
 <img src="images/ytSlicePlotJSONEntry.gif" align="right" width="500"/>
 
+
 JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned. 
 
 **The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce. 
@@ -97,9 +98,9 @@ JSON as an interface also user's to access properties defined in the JSON schema
 <img src="images/ytSchemaTitle.png" align="left" width="400"/>
 
 <br>
+<br>
 
-<div><align=center>
-The analysis schema design provides a structured grammar from which users can describe and tell the story of their data analysis. It's meant to connect with the users understanding of the data, while accessing the code it needs to run the analysis. <b>The schema has been developed to be flexible so users are free to complete operations in any order, while working in a structured schema which ensures the input to the JSON interface is valid and can be run in code</b>. This helps eliminate syntax issues, code run out of order issues, and lowers the barrier to usage.</align><div>
+The analysis schema design provides a structured grammar from which users can describe and tell the story of their data analysis. It's meant to connect with the users understanding of the data, while accessing the code it needs to run the analysis. **The schema has been developed to be flexible so users are free to complete operations in any order, while working in a structured schema which ensures the input to the JSON interface is valid and can be run in code**. This helps eliminate syntax issues, code run out of order issues, and lowers the barrier to usage.
 
 <br>
 
@@ -161,7 +162,7 @@ Operations of analysis and visualization are often reused across domains includi
 Once we understand how users from other domains understand and process data, we can add logic to the schema that allow for the language and how yt handles the data to better match what users expect. 
 
 
-Check out some Geophsyics visualization and anlaysis with yt:
+#### Check out some Geophsyics visualization and anlaysis with yt:
 
 https://nbviewer.jupyter.org/github/chrishavlin/AGU2020/blob/main/notebooks/cm1_supercell.ipynb
 
@@ -184,9 +185,19 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 
 <img src="images/swalkow_dec2020.jpg" align="left" width="250"/>
 
+
+```python
+
+```
+
 #### Chris Havlin
 
 #### Contact:
+
+
+```python
+
+```
 
 #### Matthew Turk, Assistant Professor in School of Information Sciences at the University of Illinois
 
@@ -198,6 +209,11 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 #### Contact:
 
 [Matthew Turk dot github dot io](https://matthewturk.github.io/)
+
+
+```python
+
+```
 
 #### Corentin Cadiou
 
@@ -225,7 +241,7 @@ We would also like to thank the following entities for their support:
 %%html
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
-   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 180%;}
+   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 130%;}
 </style>
 
 
@@ -234,7 +250,7 @@ We would also like to thank the following entities for their support:
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
-   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 180%;}
+   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 130%;}
 </style>
 
 
