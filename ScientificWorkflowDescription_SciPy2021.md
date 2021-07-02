@@ -39,6 +39,11 @@ What does it mean to *describe* a workflow? **We have developed a scientific wor
 This creates a flexible, language-agnostic, and structured way for users to explore, analysis and visualize natural science data. It weaves human and language together, in a way that fits with how both human and machine *think* about the data and the program. Our work is currently supporting yt, but the schema could be extended to other python libraries. 
 
 
+
+```python
+
+```
+
 ### What is yt?
 
 yt (https://yt-project.org/) is an open source python library designed for scientific analysis and visualization of volumetric data from the physical sciences. **The analysis schema is designed to operate on top of yt's existing functionalities, to provide intuitive and flexible access to yt operations.**
@@ -62,6 +67,11 @@ Here's some yt examples:
                                                                                                    Leigh Orf (University of Wisconsin),
                                                                                                                  Image Credit: NCSA AVL
 
+
+```python
+
+```
+
 ### Using JSON as an Interface
 
 
@@ -73,13 +83,19 @@ JSON as an interface also user's to access properties defined in the JSON schema
 
 
 
+
+```python
+
+```
+
 ### The Analysis Schema
 
 <img src="images/ytSchemaTitle.png" align="left" width="400"/>
 
 <br>
 
-The analysis schema design provides a structured grammar from which users can describe and tell the story of their data analysis. It's meant to connect with the users understanding of the data, while accessing the code it needs to run the analysis. **The schema has been developed to be flexible so users are free to complete operations in any order, while working in a structured schema which ensures the input to the JSON interface is valid and can be run in code**. This helps eliminate syntax issues, code run out of order issues, and lowers the barrier to usage. 
+<div><align=center>
+The analysis schema design provides a structured grammar from which users can describe and tell the story of their data analysis. It's meant to connect with the users understanding of the data, while accessing the code it needs to run the analysis. <b>The schema has been developed to be flexible so users are free to complete operations in any order, while working in a structured schema which ensures the input to the JSON interface is valid and can be run in code</b>. This helps eliminate syntax issues, code run out of order issues, and lowers the barrier to usage.</align><div>
 
 <br>
 
@@ -89,7 +105,12 @@ While the description are separate from yt, the mental model behind the data sel
 
 **By providing an additional layer between the user and the imperative code, the goal of the analysis schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
 
-#### Connecting Existing Software to Declarative Description
+
+```python
+
+```
+
+### Connecting Existing Software to Declarative Description
 
 How does the description reach and run the software? Data classes, type hinting, and schema models (all using Pydantic) are the core pieces that the analysis schema functions on. The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface. The JSON schema used for the description contains key words, which are relayed back to the code and used to run the code with user input as arguments. This code is run and output is displayed to the user. 
 
@@ -99,11 +120,21 @@ How does the description reach and run the software? Data classes, type hinting,
 ![alt](images/ytSlicePlotJSONEntry.gif)![alt](images/ytSlicePlotAnalysisSchema.gif)| ![alt](images/LongSlicePlot.png)
 
 
+
+```python
+
+```
+
 ### Supporting Workflows and Software
 
 **The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema. In addition to a responsive browser interface, you can also submit the configuration file through the command line and produce output as image files. 
 
 <img src="images/ConfigFile.gif" align="center" width="600"/>
+
+
+```python
+
+```
 
 ### Domain Contexts - Beyond Astrophysics
 
@@ -131,6 +162,11 @@ Check out some Geophsyics visualization and anlaysis with yt:
 https://nbviewer.jupyter.org/github/chrishavlin/AGU2020/blob/main/notebooks/cm1_supercell.ipynb
 
 https://github.com/chrishavlin/AGU2020
+
+
+```python
+
+```
 
 ## About the Authors
 
@@ -182,14 +218,23 @@ We would also like to thank the following entities for their support:
 
 
 ```python
-# %%html
-# <style>
-# @import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
-#    div.jp-MarkdownOutput {font-family: "Nanum Gothic"; font-size: 200%;}
-# </style>
+%%html
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 180%;}
+</style>
 
 
 ```
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 180%;}
+</style>
+
+
+
 
 
 ```python
