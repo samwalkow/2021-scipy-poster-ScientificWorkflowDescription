@@ -107,9 +107,15 @@ JSON as an interface also user's to access properties defined in the JSON schema
 
 ```
 
+---
+
 ### The Analysis Schema
 
-<img src="images/ytSchemaTitle.png" align="left" width="400"/>
+![](images/ytSchemaTitle.png)
+
+</div>
+
+<div class="col">
 
 <br>
 <br>
@@ -123,6 +129,10 @@ While the description are separate from yt, the mental model behind the data sel
 <br>
 
 **By providing an additional layer between the user and the imperative code, the goal of the analysis schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
+
+</div>
+
+---
 
 
 ```python
