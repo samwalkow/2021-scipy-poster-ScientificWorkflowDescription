@@ -54,15 +54,9 @@ yt (https://yt-project.org/) is an open source python library designed for scien
 
 Here's some yt examples:
 
-        Mantle convection in a spherical shell calculated with ASPECT. 
-        Temperature field overlaid with velocity vectors (black) 
-        and adaptively refined mesh
-        (Chris Havlin, University of Illinois at Urbana-Champaign)
+        
     
 <img src="images/weatherradar.png" align="right" width="500"/>
-
-<img src="images/ytAspect.png" align="left" width="650"/>
-
 
 
                            
@@ -162,12 +156,13 @@ Operations of analysis and visualization are often reused across domains includi
 Once we understand how users from other domains understand and process data, we can add logic to the schema that allow for the language and how yt handles the data to better match what users expect. 
 
 
-#### Check out some Geophsyics visualization and anlaysis with yt:
+#### Check out some geoscience visualization and anlaysis with yt:
 
-https://nbviewer.jupyter.org/github/chrishavlin/AGU2020/blob/main/notebooks/cm1_supercell.ipynb
+Mantle convection in a spherical shell calculated with [ASPECT](https://geodynamics.org/cig/software/aspect/). Temperature field overlaid with velocity vectors (black) and adaptively refined mesh (white), visualized with the experimental [yt-aspect frontend](https://github.com/yt-project/yt/pull/3109):
 
-https://github.com/chrishavlin/AGU2020
+<img src="images/ytAspect.png" align="left" width="650"/>
 
+Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 
 ```python
 
@@ -190,10 +185,16 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 
 ```
 
-#### Chris Havlin
+#### Chris Havlin, Research Scientist in School of Information Sciences at the University of Illinois
+
+Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
 
 #### Contact:
+- [@s_i_r_h_c](https://twitter.com/s_i_r_h_c)
+- chavlin@illinois.edu 
+- [chrishavlin.github.io](https://chrishavlin.github.io/)
 
+<img src="images/chavlin.jpg" align="left" width="250"/>
 
 ```python
 
