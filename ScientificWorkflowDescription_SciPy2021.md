@@ -54,31 +54,51 @@ yt (https://yt-project.org/) is an open source python library designed for scien
 
 Here's some yt examples:
 
-    Supernova Ignition Simulation
-    https://arxiv.org/abs/1807.07579
-    (Evan O’Connor and Sean Couch, MSU)
+---
 
+![](images/ytimage.png)
 
-<img src="images/supernova copy.png" align="left">
+</div>
 
-    
-<img src="images/weatherradar copy.png" align="right"/>
-                           
+<div class="col">
 
-                                                                                                     Predicted Weather Radar from Tornadogenesis Simulation
-                                                                                                                       Leigh Orf (University of Wisconsin),
-                                                                                                                                     Image Credit: NCSA AVL
+![](images/weatherradar.png)
+
+</div>
+
+---
+
+---
+
+Supernova Ignition Simulation
+https://arxiv.org/abs/1807.07579
+(Evan O’Connor and Sean Couch, MSU)
+
+</div>
+
+<div class="col">
+
+Predicted Weather Radar from Tornadogenesis Simulation<br/>
+Leigh Orf (University of Wisconsin),<br/>
+Image Credit: NCSA AVL
+
+</div>
+
+---
+
+```python
+
+```
 
 ### Using JSON as an Interface
 
-<div align="right">This example is being run the VSCode editor (which does the auto-completion):</div>
-<img src="images/ytSlicePlotJSONEntry.gif" align="right"/>
 
-<br>
+<img src="images/ytSlicePlotJSONEntry.gif" align="right" width="500"/>
+
+
 JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned. 
 
 **The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce. 
-
 
 
 
@@ -111,12 +131,13 @@ While the description are separate from yt, the mental model behind the data sel
 
 ### Connecting Existing Software to Declarative Description
 
-How does the description reach and run the software? Data classes, type hinting, and schema models (all using Pydantic) are the core pieces that the analysis schema functions on. **The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface.** The JSON schema used for the description contains key words, which are relayed back to the code and used to run the code with user input as arguments. This code is run and output is displayed to the user.
-
-This example is run using VSCode in Jupyter mode, where the output of the user's JSON instructions are displayed in the Jupyter server on the right hand side:
+How does the description reach and run the software? Data classes, type hinting, and schema models (all using Pydantic) are the core pieces that the analysis schema functions on. The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface. The JSON schema used for the description contains key words, which are relayed back to the code and used to run the code with user input as arguments. This code is run and output is displayed to the user. 
 
 
-<div align="middle"><video controls src="images/AnalysisSchemaJupyter.mov" align="center" height="600"/></div>
+ JSON Interface and Ouput  | Analysis Schema File
+- | - 
+![alt](images/ytSlicePlotJSONEntry.gif)![alt](images/ytSlicePlotAnalysisSchema.gif)| ![alt](images/LongSlicePlot.png)
+
 
 
 ```python
@@ -127,10 +148,7 @@ This example is run using VSCode in Jupyter mode, where the output of the user's
 
 **The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema. In addition to a responsive browser interface, you can also submit the configuration file through the command line and produce output as image files. 
 
-This example is also run in VSCode, but the file below is submitted through the command line and the output is written to a file instead:
-<br>
-
-<div align="middle"> <video controls src="images/AnalysisSchemaCL.mov" height="700"/></div>
+<img src="images/ConfigFile.gif" align="center" width="600"/>
 
 
 ```python
@@ -155,7 +173,7 @@ Operations of analysis and visualization are often reused across domains includi
 - Methods of transformation
 - Methods of plotting
 
-**Once we understand how users from other domains understand and process data, we can add logic to the schema that allow for the language and how yt handles the data to better match what users expect.** 
+Once we understand how users from other domains understand and process data, we can add logic to the schema that allow for the language and how yt handles the data to better match what users expect. 
 
 
 #### Check out some geoscience visualization and anlaysis with yt:
@@ -165,7 +183,6 @@ Mantle convection in a spherical shell calculated with [ASPECT](https://geodynam
 <img src="images/ytAspect.png" align="left" width="650"/>
 
 Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
-
 
 ```python
 
@@ -188,7 +205,7 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 
 ```
 
-#### Chris Havlin, , Research Scientist in School of Information Sciences at the University of Illinois
+#### Chris Havlin, Research Scientist in School of Information Sciences at the University of Illinois
 
 Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
 
@@ -198,10 +215,6 @@ Chris Havlin is a research scientist in the Data Exploration Lab at the School o
 - [chrishavlin.github.io](https://chrishavlin.github.io/)
 
 <img src="images/chavlin.jpg" align="left" width="250"/>
-
-
-#### Contact:
-
 
 ```python
 
@@ -249,7 +262,7 @@ We would also like to thank the following entities for their support:
 %%html
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
-   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 100%;}
+   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 130%;}
 </style>
 
 
@@ -258,7 +271,7 @@ We would also like to thank the following entities for their support:
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
-   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 100%;}
+   div.jp-MarkdownOutput {font-family: 'Hind Siliguri', sans-serif; font-size: 130%;}
 </style>
 
 
