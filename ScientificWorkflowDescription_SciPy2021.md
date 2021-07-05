@@ -56,7 +56,7 @@ Here's some yt examples:
 
 ---
 
-![](images/ytimage.png)
+![](images/supernova.png)
 
 </div>
 
