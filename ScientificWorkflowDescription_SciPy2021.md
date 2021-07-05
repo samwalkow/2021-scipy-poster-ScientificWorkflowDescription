@@ -158,7 +158,10 @@ This example is run using VSCode in Jupyter mode, where the output of the user's
 
 **The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema. In addition to a responsive browser interface, you can also submit the configuration file through the command line and produce output as image files. 
 
-<img src="images/ConfigFile.gif" align="center" width="600"/>
+This example is also run in VSCode, but the file below is submitted through the command line and the output is written to a file instead:
+<br>
+
+<div align="middle"> <video controls src="images/AnalysisSchemaCL.mov" height="700"/></div>
 
 
 ```python
@@ -190,9 +193,17 @@ Once we understand how users from other domains understand and process data, we 
 
 Mantle convection in a spherical shell calculated with [ASPECT](https://geodynamics.org/cig/software/aspect/). Temperature field overlaid with velocity vectors (black) and adaptively refined mesh (white), visualized with the experimental [yt-aspect frontend](https://github.com/yt-project/yt/pull/3109):
 
-<img src="images/ytAspect.png" align="left" width="650"/>
+---
+
+![](images/ytAspect.png) 
+
+</div>
+
+<div class="col">
 
 Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
+    
+</div>
 
 ```python
 
@@ -202,13 +213,19 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 
 #### Sam Walkow, Informatics PhD Student at the University of Illinois
 
+![](images/swalkow_dec2020.jpg)
+
+<div>
+    
+<div class="col">
+    
 Sam Walkow is a PhD student in Informatics interested in open source software sustainability, culture and data visualization. She's investigating these issues by looking at the intersection of human and computer workflows, problem solving and data conception and representation. 
 
 #### Contact:
 - [@samwalkow](https://twitter.com/SamWalkow)
 - swalkow2@illinois.edu
-
-<img src="images/swalkow_dec2020.jpg" align="left" width="250"/>
+    
+</div>
 
 
 ```python
@@ -223,8 +240,14 @@ Chris Havlin is a research scientist in the Data Exploration Lab at the School o
 - [@s_i_r_h_c](https://twitter.com/s_i_r_h_c)
 - chavlin@illinois.edu 
 - [chrishavlin.github.io](https://chrishavlin.github.io/)
+    
+<div>
+    
+<div class="col">
 
-<img src="images/chavlin.jpg" align="left" width="250"/>
+![](images/chavlin.jpg)
+    
+</div>
 
 ```python
 
