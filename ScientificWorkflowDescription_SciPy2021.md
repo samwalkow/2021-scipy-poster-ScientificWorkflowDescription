@@ -116,8 +116,7 @@ JSON as an interface also user's to access properties defined in the JSON schema
 </div>
 
 <div class="col">
-
-<br>
+    
 <br>
 
 The analysis schema design provides a structured grammar from which users can describe and tell the story of their data analysis. It's meant to connect with the users understanding of the data, while accessing the code it needs to run the analysis. **The schema has been developed to be flexible so users are free to complete operations in any order, while working in a structured schema which ensures the input to the JSON interface is valid and can be run in code**. This helps eliminate syntax issues, code run out of order issues, and lowers the barrier to usage.
@@ -127,10 +126,11 @@ The analysis schema design provides a structured grammar from which users can de
 While the description are separate from yt, the mental model behind the data selection, transformation, and logic remain connected to yt. We change how users can access those operations, but not how yt handles the data it receives. In this way, users are learning how yt thinks and understands data input, while using description and their domain knowledge to reasoon with the data and the returned output.
 
 <br>
+</div>
 
 **By providing an additional layer between the user and the imperative code, the goal of the analysis schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
 
-</div>
+
 
 ---
 
@@ -143,10 +143,10 @@ While the description are separate from yt, the mental model behind the data sel
 
 How does the description reach and run the software? Data classes, type hinting, and schema models (all using Pydantic) are the core pieces that the analysis schema functions on. The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface. The JSON schema used for the description contains key words, which are relayed back to the code and used to run the code with user input as arguments. This code is run and output is displayed to the user. 
 
+This example is run using VSCode in Jupyter mode, where the output of the user's JSON instructions are displayed in the Jupyter server on the right hand side:
 
- JSON Interface and Ouput  | Analysis Schema File
-- | - 
-![alt](images/ytSlicePlotJSONEntry.gif)![alt](images/ytSlicePlotAnalysisSchema.gif)| ![alt](images/LongSlicePlot.png)
+
+<div align="middle"><video controls src="images/AnalysisSchemaJupyter.mov" align="center" height="600"/></div>
 
 
 
