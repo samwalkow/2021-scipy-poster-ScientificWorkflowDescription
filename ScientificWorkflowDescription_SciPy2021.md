@@ -209,6 +209,8 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 
 ```
 
+---
+
 ## About the Authors
 
 #### Sam Walkow, Informatics PhD Student at the University of Illinois
@@ -227,11 +229,13 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
     
 </div>
 
-
+    
+    
 ```python
 
 ```
 
+    
 #### Chris Havlin, Research Scientist in School of Information Sciences at the University of Illinois
 
 Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
