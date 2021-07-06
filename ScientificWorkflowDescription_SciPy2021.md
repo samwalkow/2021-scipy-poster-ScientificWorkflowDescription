@@ -10,7 +10,7 @@
 - [github.com/yt-project](https://github.com/yt-project/yt/)
 - [github.com/data-exp-lab/analysis_schema](https://github.com/data-exp-lab/analysis_schema)
 
-#### Authors: Sam Walkow, Dr. Chris Havlin, Dr. Matthew Turk, Corentin Cadiou
+#### Authors: Sam Walkow, Dr. Chris Havlin, Dr. Matthew Turk, Dr. Corentin Cadiou
 
 
 ```python
@@ -273,10 +273,20 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 
 ```
 
-#### Corentin Cadiou
+#### Corentin Cadiou, Postdoctoral Research Assistant at University College London
+
+Corentin Cadiou is a postdoctoral researcher at the department of Physics and Astrophysics at University College London.
+His research focuses on simulating the formation of galaxies in the Universe. To that end, he is interested in exploring novel approaches to data analysis and data processing of numerical simulations.
+
+[cphyc dot github dot io](https://cphyc.github.io)
 
 #### Contact:
 
+- [@cphyc](https://twitter.com/cphyc)
+- c.cadiou@ucl.ac.uk
+- [cphyc.github.io](https://cphyc.github.io/)
+
+![](images/ccadiou.jpg)
 
 ```python
 
