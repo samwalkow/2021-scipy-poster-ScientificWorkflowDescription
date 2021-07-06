@@ -92,14 +92,12 @@ Image Credit: NCSA AVL
 
 ### Using JSON as an Interface
 
-
-<img src="images/ytSlicePlotJSONEntry.gif" align="right" width="500"/>
-
-
+|||
+|-|-|
 JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned.
 
 **The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce.
-
+|<img src="images/ytSlicePlotJSONEntry.gif" align="right" width="500"/>
 
 
 
@@ -240,7 +238,7 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 
 |||
 | - |- |
-|![](images/chavlin.jpg)| Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
+|<img src="images/chavlin.jpg" align="left" width="250"/>| Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
 
 ```python
 ```
@@ -272,7 +270,7 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 
 |||
 | - |- |
-|![](images/ccadiou.jpg)| Corentin Cadiou is a postdoctoral researcher at the department of Physics and Astrophysics at University College London.
+|<img src="images/ccadiou.jpg" align="left" width="250"/>| Corentin Cadiou is a postdoctoral researcher at the department of Physics and Astrophysics at University College London.
 His research focuses on simulating the formation of galaxies in the Universe. To that end, he is interested in exploring novel approaches to data analysis and data processing of numerical simulations.
 
 
