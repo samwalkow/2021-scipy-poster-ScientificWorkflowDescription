@@ -228,12 +228,7 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 - swalkow2@illinois.edu
     
 </div>
-
-    
-    
-```python
-
-```
+<br>
 
 
 #### Chris Havlin, Research Scientist in School of Information Sciences at the University of Illinois
@@ -253,9 +248,7 @@ Chris Havlin is a research scientist in the Data Exploration Lab at the School o
 
 </div>
 
-```python
-
-```
+    
 
 #### Matthew Turk, Assistant Professor in School of Information Sciences at the University of Illinois
 
@@ -268,10 +261,8 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 
 [Matthew Turk dot github dot io](https://matthewturk.github.io/)
 
-
-```python
-
-```
+    
+    
 
 #### Corentin Cadiou, Postdoctoral Research Assistant at University College London
 
@@ -283,8 +274,13 @@ His research focuses on simulating the formation of galaxies in the Universe. To
 - [@cphyc](https://twitter.com/cphyc)
 - c.cadiou@ucl.ac.uk
 - [cphyc.github.io](https://cphyc.github.io/)
+    
+<div>
+<div class="col">
 
 ![](images/ccadiou.jpg)
+    
+</div>
 
 ```python
 
