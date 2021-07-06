@@ -216,7 +216,6 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 
 #### Sam Walkow, Informatics PhD Student at the University of Illinois
 
----
 ![](images/swalkow_dec2020.jpg)
 
 <div>
@@ -231,11 +230,9 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 
 </div>
 
----
+
 
 #### Chris Havlin, Research Scientist in School of Information Sciences at the University of Illinois
-
----
 
 
 Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
@@ -252,7 +249,6 @@ Chris Havlin is a research scientist in the Data Exploration Lab at the School o
 
 </div>
 
----
 
 
 #### Matthew Turk, Assistant Professor in School of Information Sciences at the University of Illinois
@@ -267,7 +263,6 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 [Matthew Turk dot github dot io](https://matthewturk.github.io/)
 
 
----     
 
 #### Corentin Cadiou, Postdoctoral Research Assistant at University College London
 
@@ -289,7 +284,6 @@ His research focuses on simulating the formation of galaxies in the Universe. To
 
 </div>
 
----   
 
 
 ```python
