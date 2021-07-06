@@ -19,7 +19,7 @@
 
 ### The Learning Cliff: Computational Workflows
 
-Working with scientific data and open source software requires understanding a myriad of tools and best practices. Analysis and visualization using python and open source relies on paradigms like imperative programming and for loops to write code and nuances in syntax like dot notation. After that, there's learning the internal functionality of individual packages, which are often domain specific. 
+Working with scientific data and open source software requires understanding a myriad of tools and best practices. Analysis and visualization using python and open source relies on paradigms like imperative programming and for loops to write code and nuances in syntax like dot notation. After that, there's learning the internal functionality of individual packages, which are often domain specific.
 
 Interdisciplinary work provides an extra barrier, as new ways of thinking and new tools are added to the work load, butting heads with the domain focused tools available. While discovery and reconfiguration of software tools can be an intersection of creativity and innovation, too often learning curves get in the way and slow research down, or cause the wheel to be reinvented over and over again in each domain. 
 
@@ -96,7 +96,7 @@ Image Credit: NCSA AVL
 <img src="images/ytSlicePlotJSONEntry.gif" align="right" width="500"/>
 
 
-JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned. 
+JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned.
 
 **The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce. 
 
@@ -235,22 +235,22 @@ Sam Walkow is a PhD student in Informatics interested in open source software su
 
 ```
 
-    
+
 #### Chris Havlin, Research Scientist in School of Information Sciences at the University of Illinois
 
 Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
 
 #### Contact:
 - [@s_i_r_h_c](https://twitter.com/s_i_r_h_c)
-- chavlin@illinois.edu 
+- chavlin@illinois.edu
 - [chrishavlin.github.io](https://chrishavlin.github.io/)
-    
+
 <div>
     
 <div class="col">
 
 ![](images/chavlin.jpg)
-    
+
 </div>
 
 ```python
@@ -277,8 +277,6 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 
 Corentin Cadiou is a postdoctoral researcher at the department of Physics and Astrophysics at University College London.
 His research focuses on simulating the formation of galaxies in the Universe. To that end, he is interested in exploring novel approaches to data analysis and data processing of numerical simulations.
-
-[cphyc dot github dot io](https://cphyc.github.io)
 
 #### Contact:
 
