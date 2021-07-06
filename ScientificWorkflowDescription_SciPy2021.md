@@ -92,9 +92,9 @@ Image Credit: NCSA AVL
 
 ### Using JSON as an Interface
 
-|-|This example is being run the VSCode editor (which does the auto-completion):|
+||This example is being run the VSCode editor (which does the auto-completion):|
 |-|-|
-|JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned.<br><br>**The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce.|<img src="images/ytSlicePlotJSONEntry.gif" align="right" width="500"/>|
+|JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned.<br><br>**The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce.|<img src="images/ytSlicePlotJSONEntry.gif" align="right" width="1500"/>|
 
 
 ```python
