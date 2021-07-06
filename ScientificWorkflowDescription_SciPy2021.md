@@ -214,8 +214,9 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 
 ## About the Authors
 
-#### Sam Walkow, Informatics PhD Student at the University of Illinois
+<br>
 
+#### Sam Walkow, Informatics PhD Student at the University of Illinois
 
 #### Contact:
 - [@samwalkow](https://twitter.com/SamWalkow)
@@ -225,13 +226,11 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 | - |- |
 |<img src="images/swalkow_dec2020.jpg" align="left" width="250"/>| Sam Walkow is a PhD student in Informatics interested in open source software sustainability, culture and data visualization. She's investigating these issues by looking at the intersection of human and computer workflows, problem solving and data conception and representation. 
 
-
+```python
+```
 
 
 #### Chris Havlin, Research Scientist in School of Information Sciences at the University of Illinois
-
-
-Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
 
 #### Contact:
 - [@s_i_r_h_c](https://twitter.com/s_i_r_h_c)
@@ -239,12 +238,12 @@ Chris Havlin is a research scientist in the Data Exploration Lab at the School o
 - [chrishavlin.github.io](https://chrishavlin.github.io/)
 
 
-<div class="col">
+|||
+| - |- |
+|![](images/chavlin.jpg)| Chris Havlin is a research scientist in the Data Exploration Lab at the School of Information Sciences at the University of Illinois. His research focuses on cross-domain data visualization and analysis in the physical sciences.
 
-![](images/chavlin.jpg)
-
-</div>
-
+```python
+```
 
 
 #### Matthew Turk, Assistant Professor in School of Information Sciences at the University of Illinois
@@ -259,12 +258,11 @@ At the University of Illinois, he leads the Data Exploration Lab and teaches in 
 [Matthew Turk dot github dot io](https://matthewturk.github.io/)
 
 
+```python
+```
 
 #### Corentin Cadiou, Postdoctoral Research Assistant at University College London
 
-
-Corentin Cadiou is a postdoctoral researcher at the department of Physics and Astrophysics at University College London.
-His research focuses on simulating the formation of galaxies in the Universe. To that end, he is interested in exploring novel approaches to data analysis and data processing of numerical simulations.
 
 #### Contact:
 
@@ -272,14 +270,10 @@ His research focuses on simulating the formation of galaxies in the Universe. To
 - c.cadiou@ucl.ac.uk
 - [cphyc.github.io](https://cphyc.github.io/)
 
-
-<div>
-<div class="col">
-
-![](images/ccadiou.jpg)
-
-</div>
-
+|||
+| - |- |
+|![](images/ccadiou.jpg)| Corentin Cadiou is a postdoctoral researcher at the department of Physics and Astrophysics at University College London.
+His research focuses on simulating the formation of galaxies in the Universe. To that end, he is interested in exploring novel approaches to data analysis and data processing of numerical simulations.
 
 
 ```python
