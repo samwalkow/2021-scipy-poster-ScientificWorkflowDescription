@@ -216,19 +216,15 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 
 #### Sam Walkow, Informatics PhD Student at the University of Illinois
 
-![](images/swalkow_dec2020.jpg)
-
-<div>
-
-<div class="col">
-
-Sam Walkow is a PhD student in Informatics interested in open source software sustainability, culture and data visualization. She's investigating these issues by looking at the intersection of human and computer workflows, problem solving and data conception and representation.
 
 #### Contact:
 - [@samwalkow](https://twitter.com/SamWalkow)
 - swalkow2@illinois.edu
 
-</div>
+|||
+| - |- |
+|<img src="images/swalkow_dec2020.jpg" align="left" width="250"/>| Sam Walkow is a PhD student in Informatics interested in open source software sustainability, culture and data visualization. She's investigating these issues by looking at the intersection of human and computer workflows, problem solving and data conception and representation. 
+
 
 
 
