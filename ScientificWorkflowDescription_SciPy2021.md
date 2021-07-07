@@ -36,12 +36,9 @@ Check out our previous work on understanding user mental models in yt here: http
 
 ### Describing Scientific Analysis and Visualization
 
-### Describing Scientific Analysis and Visualization
-
-|||
+|Scientific Description Tool: Analysis Schema Workflow||
 | - |- |
 |![](images/AnalysisSchemaWorkflow.png)| What does it mean to *describe* a workflow? **We have developed a scientific workflow description prototype, which is divided into three different pieces - the JSON schema, a browser interface for user interaction, and a render-engine that will execute the code**. Using a configuration file which will live in the broswer, users can select actions and add appropriate data for those actions which are controled by the JSON schema. Users can then submit this file to the rendering engine, creating output for their work. <br><br>This creates a flexible, language-agnostic, and structured way for users to explore, analysis and visualize natural science data. It weaves human and language together, in a way that fits with how both human and machine *think* about the data and the program. Our work is currently supporting yt, but the schema could be extended to other python libraries. 
-
 
 ```python
 
@@ -134,12 +131,13 @@ While the description are separate from yt, the mental model behind the data sel
 
 ### Connecting Existing Software to Declarative Description
 
-How does the description reach and run the software? Data classes, type hinting, and schema models (all using Pydantic) are the core pieces that the analysis schema functions on. The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface. The JSON schema used for the description contains key words, which are relayed back to the code and used to run the code with user input as arguments. This code is run and output is displayed to the user.
+How does the description reach and run the software? The core pieces that the analysis schema functions using data classes, type hinting, and schema models. Analysis Schema also relies on !(Pydantic)[https://github.com/samuelcolvin/pydantic/] to produce the models. **The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface.** 
 
-This example is run using VSCode in Jupyter mode, where the output of the user's JSON instructions are displayed in the Jupyter server on the right hand side:
+Pydantic is the vehicle that converts yt code into a model, which is then saved as a JSON schema that can be reference by the user. Data classes with type hinting allow pydantic to create the building blocks
+ 
+Below is the Analysis Schema workflow, where the `Dataset` dataclass is highlighted through the diagram:
 
-
-<div align="middle"><video controls src="images/AnalysisSchemaJupyter.mov" align="center" height="600"/></div>
+<img src="images/AnalysisSchemaDiagram.png" align="left" width="1200"/>
 
 
 
@@ -149,17 +147,41 @@ This example is run using VSCode in Jupyter mode, where the output of the user's
 
 ### Supporting Workflows and Software
 
-**The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema. In addition to a responsive browser interface, you can also submit the configuration file through the command line and produce output as image files.
+**The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema: in Jupyter, in the command line, and in the browser.
+
+#### Working in Jupyter:
+
+This example is run using VSCode in Jupyter mode, where the output of the user's JSON instructions are displayed in the Jupyter server on the right hand side:
+
+
+```python
+
+```
+
+#### Working in the command line:
+
+Users can also submit the configuration file through the command line and produce output as image files. 
 
 This example is also run in VSCode, but the file below is submitted through the command line and the output is written to a file instead:
 <br>
 
 <div align="middle"> <video controls src="images/AnalysisSchemaCL.mov" height="700"/></div>
 
+```python
+
+```
+
+#### Browsed-based Analysis and Visualization
+
+In addition to Jupyter and command line workflows, we are also working towards a browser environment that allows to use the Analysis Schema without downloading any software. Our goal to remove hardware barriers to working with open source scientific software: 
+
+<div align="middle"><video controls src="images/schema_browser.mp4" height="550"/></div>
+
 
 ```python
 
 ```
+
 
 ### Domain Contexts - Beyond Astrophysics
 
