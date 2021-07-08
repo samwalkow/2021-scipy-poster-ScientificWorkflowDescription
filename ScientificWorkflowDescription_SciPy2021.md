@@ -38,7 +38,7 @@ Check out our previous work on understanding user mental models in yt here: http
 
 |Scientific Description Tool: Analysis Schema Workflow||
 | - |- |
-|![](images/AnalysisSchemaWorkflow.png)| What does it mean to *describe* a workflow? **We have developed a scientific workflow description prototype, which is divided into three different pieces - the JSON schema, a browser interface for user interaction, and a render-engine that will execute the code**. Using a configuration file which will live in the broswer, users can select actions and add appropriate data for those actions which are controled by the JSON schema. Users can then submit this file to the rendering engine, creating output for their work. <br><br>This creates a flexible, language-agnostic, and structured way for users to explore, analysis and visualize natural science data. It weaves human and language together, in a way that fits with how both human and machine *think* about the data and the program. Our work is currently supporting yt, but the schema could be extended to other python libraries. 
+|![](images/AnalysisSchemaWorkflowLarge.png)| What does it mean to *describe* a workflow? **We have developed a scientific workflow description prototype, which is divided into three different pieces - the JSON schema, a browser interface for user interaction, and a render-engine that will execute the code**. Using a configuration file which will live in the broswer, users can select actions and add appropriate data for those actions which are controled by the JSON schema. Users can then submit this file to the rendering engine, creating output for their work. <br><br>This creates a flexible, language-agnostic, and structured way for users to explore, analysis and visualize natural science data. It weaves human and language together, in a way that fits with how both human and machine *think* about the data and the program. Our work is currently supporting yt, but the schema could be extended to other python libraries. 
 
 ```python
 
@@ -138,6 +138,7 @@ Pydantic is the vehicle that converts yt code into a model, which is then saved 
 Below is the Analysis Schema workflow, where the `Dataset` dataclass is highlighted through the diagram:
 
 <img src="images/AnalysisSchemaDiagram.png" align="left" width="1200"/>
+<br>
 
 
 
@@ -153,6 +154,8 @@ Below is the Analysis Schema workflow, where the `Dataset` dataclass is highligh
 
 This example is run using VSCode in Jupyter mode, where the output of the user's JSON instructions are displayed in the Jupyter server on the right hand side:
 
+<div align="middle"><video controls src="images/AnalysisSchemaJupyter.mov" align="center" height="600"/></div>
+
 
 ```python
 
@@ -166,6 +169,8 @@ This example is also run in VSCode, but the file below is submitted through the 
 <br>
 
 <div align="middle"> <video controls src="images/AnalysisSchemaCL.mov" height="700"/></div>
+
+
 
 ```python
 
