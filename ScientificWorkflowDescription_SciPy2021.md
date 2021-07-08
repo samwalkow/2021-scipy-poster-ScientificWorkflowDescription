@@ -36,7 +36,7 @@ Check out our previous work on understanding user mental models in yt here: http
 
 ### Describing Scientific Analysis and Visualization
 
-<img src="images/AnalysisSchemaWorkflowLarge.png" align="right" width="500"/>
+![](images/AnalysisSchemaWorkflowLarge.png)
 
 <div>
     
@@ -125,8 +125,6 @@ While the description are separate from yt, the mental model behind the data sel
 </div>
 
 **By providing an additional layer between the user and the imperative code, the goal of the analysis schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
-
-
 
 ---
 
