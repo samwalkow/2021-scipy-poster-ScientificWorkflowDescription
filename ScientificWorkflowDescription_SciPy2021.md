@@ -37,7 +37,7 @@ Check out our previous work on understanding user mental models in yt here: http
 ### Describing Scientific Analysis and Visualization
 
 
-|Scientific Description Tool: Analysis Schema Workflow||
+|||
 | - |- |
 |![](images/AnalysisSchemaWorkflow.png)| What does it mean to *describe* a workflow? **We have developed a scientific workflow description prototype, which is divided into three different pieces - the JSON schema, a browser interface for user interaction, and a render-engine that will execute the code**. Using a configuration file which will live in the broswer, users can select actions and add appropriate data for those actions which are controled by the JSON schema. Users can then submit this file to the rendering engine, creating output for their work. <br><br>This creates a flexible, language-agnostic, and structured way for users to explore, analysis and visualize natural science data. It weaves human and language together, in a way that fits with how both human and machine *think* about the data and the program. Our work is currently supporting yt, but the schema could be extended to other python libraries. 
     
