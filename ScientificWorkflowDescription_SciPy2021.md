@@ -156,7 +156,7 @@ How does the description reach and run the software? The core pieces of the Anal
 
 Pydantic is the vehicle that converts yt code into a model, which is then saved as a JSON schema that can be reference by the user. Data classes with type hinting allow pydantic to create the building blocks that are referenced over and over again within the schema. 
  
-Below is the Analysis Schema workflow, where the `Dataset` dataclass is highlighted through the diagram:
+Below is the same Analysis Schema workflow, where the `Dataset` dataclass is highlighted through the diagram:
 
 <img src="images/AnalysisSchemaDiagram.png" align="left" width="1200"/>
 <br>
@@ -217,7 +217,7 @@ In addition to Jupyter and command line workflows, we are also working towards a
 
 Open source scientific software fosters innovation and supports a surge of new tools, which does introduce a sustainability problem. The Analysis Schema is designed to address this problem - any python module can be added to the underlying model, where the Analysis Schema adds that model to the schema. This allows for any packages to be accessed and run in the JSON interface. So users can use JSON sytanx to run any scientific python code.
 
-Here's an example where [napari](https://napari.org/) is access through the JSON interface using VSCode and a Jupyter notebook:
+Here's an example where [napari](https://napari.org/) is accessed through the JSON interface using VSCode and a Jupyter notebook:
 
 <div align="middle"><video controls src="images/schema_napari.mp4" width="800"/></div>
 
