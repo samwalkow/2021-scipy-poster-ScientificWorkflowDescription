@@ -27,6 +27,7 @@
 * [Supporting Workflows and Software](#seventh-bullet)
 * [Future Work](#eighth-bullet)
 * [About the Authors](#nineth-bullet)
+* [Acknowledgements](#nineth-bullet)
 
 ```python
 
@@ -221,6 +222,10 @@ Here's an example where [napari](https://napari.org/) is access through the JSON
 
 
 
+```python
+
+```
+
 #### Beyond Astrophysics
 
 Historically yt was developed for computational astrophysics, and it is our goal to expand yt beyond it's original domain but implementing a domain contexts system. Adding a way for the Analysis Schema to detect and adjust the schema according to the domain the user is working will just users more computational power to answer research questions. 
@@ -336,7 +341,7 @@ His research focuses on simulating the formation of galaxies in the Universe. To
 
 ```
 
-### Acknowledgements
+### Acknowledgements <a class="anchor" id="tenth-bullet"></a>
 
 We would like to thank major yt contributors including Nathan Goldbaum, and the larger yt community for their sustained effort.
 
