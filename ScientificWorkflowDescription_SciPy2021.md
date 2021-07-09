@@ -35,13 +35,13 @@
 
 ### The Learning Cliff: Computational Workflows <a class="anchor" id="first-bullet"></a>
 
-Working with scientific data and open source software requires understanding a myriad of tools and best practices. Analysis and visualization using python and open source relies on paradigms like imperative programming and for loops to write code and nuances in syntax like dot notation. After that, there's learning the internal functionality of individual packages, which are often domain specific. 
+Working with scientific data and open source software requires understanding a myriad of tools and best practices. This paradigms like imperative programming and for loops to write code, and nuances in syntax like dot notation. Once users master that, there's learning the internal functionality of individual packages, which are often domain specific. 
 
-Interdisciplinary work provides an extra barrier, as new ways of thinking and new tools are added to the work load, butting heads with the domain focused tools available. While discovery and reconfiguration of software tools can be an intersection of creativity and innovation, too often learning curves get in the way and slow research down, or cause the wheel to be reinvented over and over again in each domain. 
+Interdisciplinary work provides an extra barrier in addition to those mentioned above, as new ways of thinking and new tools are added to the work load, butting heads with the domain focused tools available. While discovery and reconfiguration of software tools can be an intersection of creativity and innovation, too often learning curves get in the way and slow research down, or cause the wheel to be reinvented over and over again in each domain. 
 
-**Scientific workflow description** provides an alternative to the cognitive overhead of learning a new software package and use of imperative programming paradigms often used with python. We aim to unite the core aspects of interdisciplinary computational work using common natural science mental models while removing inherent domain-specific workflow and computing language barriers, creating an accessible scientific query environment. **This description is encoded in a JSON schema, accessed by the user through a configuration file, and run using python modules that attach the configuration file to the code which produces output.** 
+**Scientific workflow description provides an alternative to the cognitive overhead of learning a new software package and use of imperative programming paradigms often used with python**. We aim to unite the core aspects of interdisciplinary computational work using common natural science mental models while removing inherent domain-specific workflow and computing language barriers, creating an accessible scientific query environment. **This description is encoded in a JSON schema, accessed by the user through a configuration file, and run using python modules that attach the configuration file to the code which produces output.** 
 
-In this case, 'the code' is [yt](http://yt-project.org/), an open source python library designed for scientific analysis and visualization of volumetric data from the physical sciences. We use yt, an computational astrophyics tool, to demonstrate how a domain specific software can operate within a descriptive framework. **Future work will include support for multiple python libaries across several domains.** 
+In this case, 'the code' is [yt](http://yt-project.org/), an open source python library designed for scientific analysis and visualization of volumetric data for the computational astrophysics domain. We use yt, an computational astrophyics tool, to demonstrate how a domain specific software can operate within a descriptive framework. **Future work will include support for multiple python libaries across several domains.** 
 
 Check out our previous work on understanding user mental models in yt here: https://samwalkow.github.io/2020-scipy-poster-domainstories/
 
@@ -66,7 +66,7 @@ Check out our previous work on understanding user mental models in yt here: http
 
 yt (https://yt-project.org/) is an open source python library designed for scientific analysis and visualization of volumetric data from the physical sciences. **The analysis schema is designed to operate on top of yt's existing functionalities, to provide intuitive and flexible access to yt operations.**
 
-Here's some yt examples:
+Here's some yt visualization examples:
 
 ---
 
@@ -106,7 +106,7 @@ Image Credit: NCSA AVL
 
 ### Using JSON as an Interface <a class="anchor" id="fourth-bullet"></a>
 
-JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned.<br><br>**The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce. 
+JSON as an interface allows user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned.<br><br>**The file is used as its own validation, as  users described objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema easy to create and reproduce. 
     
 <div>
 <div class="col">
@@ -136,12 +136,12 @@ The analysis schema design provides a structured grammar from which users can de
 
 <br>
 
-While the description are separate from yt, the mental model behind the data selection, transformation, and logic remain connected to yt. We change how users can access those operations, but not how yt handles the data it receives. In this way, users are learning how yt thinks and understands data input, while using description and their domain knowledge to reasoon with the data and the returned output.
+While the description are separate from yt, the mental model behind the data selection, transformation, and logic remain connected to yt. We change how users can access those operations, but not how yt handles the data it receives. In this way, users are learning how yt thinks and understands data input, while using their domain knowledge to reason with the data and the returned output.
 
 <br>
 </div>
 
-**By providing an additional layer between the user and the imperative code, the goal of the analysis schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
+**By providing an additional layer between the user and the imperative code, the goal of the Analysis Schema is not to further separate the user from the software, but to bring them closer to together by improving the communication and shared work between human and machine.**
 
 ---
 
@@ -152,9 +152,9 @@ While the description are separate from yt, the mental model behind the data sel
 
 ### Connecting Existing Software to Declarative Description <a class="anchor" id="sixth-bullet"></a>
 
-How does the description reach and run the software? The core pieces that the analysis schema functions using data classes, type hinting, and schema models. Analysis Schema also relies on !(Pydantic)[https://github.com/samuelcolvin/pydantic/] to produce the models. **The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface.** 
+How does the description reach and run the software? The core pieces of the Analysis Schema are data classes, type hinting, and schema models. Analysis Schema relies on !(Pydantic)[https://github.com/samuelcolvin/pydantic/] to produce the models. **The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface.** 
 
-Pydantic is the vehicle that converts yt code into a model, which is then saved as a JSON schema that can be reference by the user. Data classes with type hinting allow pydantic to create the building blocks
+Pydantic is the vehicle that converts yt code into a model, which is then saved as a JSON schema that can be reference by the user. Data classes with type hinting allow pydantic to create the building blocks that are referenced over and over again within the schema. 
  
 Below is the Analysis Schema workflow, where the `Dataset` dataclass is highlighted through the diagram:
 
@@ -171,13 +171,14 @@ Below is the Analysis Schema workflow, where the `Dataset` dataclass is highligh
 
 ### Supporting Workflows and Software <a class="anchor" id="seventh-bullet"></a>
 
-**The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema: in Jupyter, in the command line, and in the browser.
+**The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundation for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema: in a Jupyter environment, in the command line, and in the browser. See some example below!
 
 #### Working in Jupyter:
 
 This example is run using VSCode in Jupyter mode, where the output of the user's JSON instructions are displayed in the Jupyter server on the right hand side:
 
 <div align="middle"><video controls src="images/AnalysisSchemaJupyter.mov" align="center" height="600"/></div>
+
 
 
 ```python
@@ -201,7 +202,7 @@ This example is also run in VSCode, but the file below is submitted through the 
 
 #### Browsed-based Analysis and Visualization
 
-In addition to Jupyter and command line workflows, we are also working towards a browser environment that allows to use the Analysis Schema without downloading any software. Our goal to remove hardware barriers to working with open source scientific software: 
+In addition to Jupyter and command line workflows, we are also working towards a browser environment that allows use of the Analysis Schema without downloading any software. Our goal is to remove hardware barriers to working with open source scientific software: 
 
 <div align="middle"><video controls src="images/schema_browser.mp4" height="550"/></div>
 
@@ -214,7 +215,7 @@ In addition to Jupyter and command line workflows, we are also working towards a
 
 #### Beyond yt
 
-Open source scientific software foster innovation and supports a surge of new tools, which does introduce a sustainability problem for users. It's hard to keep up with new developments and learn new tools. The Analysis Schema is designed to address this problem - any python module can be added to the underlying model. This allows for any packages to be accessed and run in the JSON interface. So users can use JSON sytanx to run any scientific python code.
+Open source scientific software fosters innovation and supports a surge of new tools, which does introduce a sustainability problem. The Analysis Schema is designed to address this problem - any python module can be added to the underlying model, where the Analysis Schema adds that model to the schema. This allows for any packages to be accessed and run in the JSON interface. So users can use JSON sytanx to run any scientific python code.
 
 Here's an example where [napari](https://napari.org/) is access through the JSON interface using VSCode and a Jupyter notebook:
 
@@ -228,7 +229,7 @@ Here's an example where [napari](https://napari.org/) is access through the JSON
 
 #### Beyond Astrophysics
 
-Historically yt was developed for computational astrophysics, and it is our goal to expand yt beyond it's original domain but implementing a domain contexts system. Adding a way for the Analysis Schema to detect and adjust the schema according to the domain the user is working will just users more computational power to answer research questions. 
+Historically yt was developed for computational astrophysics, and it is our goal to expand yt beyond it's original domain by implementing a domain contexts system. Adding a way for the Analysis Schema to detect and adjust the schema according to the domain the user is working will just users more computational power to answer research questions. 
 
 In the future, we are aiming to expand yt's capabilities to support: 
 
