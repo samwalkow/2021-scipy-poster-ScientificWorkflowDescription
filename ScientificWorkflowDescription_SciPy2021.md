@@ -17,15 +17,30 @@
 
 ```
 
-### The Learning Cliff: Computational Workflows
+## Table of Contents:
+* [The Learning Cliff: Computational Workflows](#first-bullet)
+* [Describing Scientific Analysis and Visualization](#second-bullet)
+* [What is yt?](#third-bullet)
+* [Using JSON as an Interface](#fourth-bullet)
+* [The Analysis Schema](#fifth-bullet)
+* [Connecting Existing Software to Declarative Description](#sixth-bullet)
+* [Supporting Workflows and Software](#seventh-bullet)
+* [Future Work](#eighth-bullet)
+* [About the Authors](#nineth-bullet)
 
-Working with scientific data and open source software requires understanding a myriad of tools and best practices. Analysis and visualization using python and open source relies on paradigms like imperative programming and for loops to write code and nuances in syntax like dot notation. After that, there's learning the internal functionality of individual packages, which are often domain specific.
+```python
 
-Interdisciplinary work provides an extra barrier, as new ways of thinking and new tools are added to the work load, butting heads with the domain focused tools available. While discovery and reconfiguration of software tools can be an intersection of creativity and innovation, too often learning curves get in the way and slow research down, or cause the wheel to be reinvented over and over again in each domain.
+```
 
-**Scientific workflow description** provides an alternative to the cognitive overhead of learning a new software package and use of imperative programming paradigms often used with python. We aim to unite the core aspects of interdisciplinary computational work using common natural science mental models while removing inherent domain-specific workflow and computing language barriers, creating an accessible scientific query environment. **This description is encoded in a JSON schema, accessed by the user through a configuration file, and run using python modules that attach the configuration file to the code which produces output.**
+### The Learning Cliff: Computational Workflows <a class="anchor" id="first-bullet"></a>
 
-In this case, 'the code' is [yt](http://yt-project.org/), an open source python library designed for scientific analysis and visualization of volumetric data from the physical sciences. We use yt, an computational astrophyics tool, to demonstrate how a domain specific software can operate within a descriptive framework.
+Working with scientific data and open source software requires understanding a myriad of tools and best practices. Analysis and visualization using python and open source relies on paradigms like imperative programming and for loops to write code and nuances in syntax like dot notation. After that, there's learning the internal functionality of individual packages, which are often domain specific. 
+
+Interdisciplinary work provides an extra barrier, as new ways of thinking and new tools are added to the work load, butting heads with the domain focused tools available. While discovery and reconfiguration of software tools can be an intersection of creativity and innovation, too often learning curves get in the way and slow research down, or cause the wheel to be reinvented over and over again in each domain. 
+
+**Scientific workflow description** provides an alternative to the cognitive overhead of learning a new software package and use of imperative programming paradigms often used with python. We aim to unite the core aspects of interdisciplinary computational work using common natural science mental models while removing inherent domain-specific workflow and computing language barriers, creating an accessible scientific query environment. **This description is encoded in a JSON schema, accessed by the user through a configuration file, and run using python modules that attach the configuration file to the code which produces output.** 
+
+In this case, 'the code' is [yt](http://yt-project.org/), an open source python library designed for scientific analysis and visualization of volumetric data from the physical sciences. We use yt, an computational astrophyics tool, to demonstrate how a domain specific software can operate within a descriptive framework. **Future work will include support for multiple python libaries across several domains.** 
 
 Check out our previous work on understanding user mental models in yt here: https://samwalkow.github.io/2020-scipy-poster-domainstories/
 
@@ -34,7 +49,7 @@ Check out our previous work on understanding user mental models in yt here: http
 
 ```
 
-### Describing Scientific Analysis and Visualization
+### Describing Scientific Analysis and Visualization <a class="anchor" id="second-bullet"></a>
 
 
 |||
@@ -46,7 +61,7 @@ Check out our previous work on understanding user mental models in yt here: http
 
 ```
 
-### What is yt?
+### What is yt?<a class="anchor" id="third-bullet"></a>
 
 yt (https://yt-project.org/) is an open source python library designed for scientific analysis and visualization of volumetric data from the physical sciences. **The analysis schema is designed to operate on top of yt's existing functionalities, to provide intuitive and flexible access to yt operations.**
 
@@ -88,7 +103,7 @@ Image Credit: NCSA AVL
 
 ```
 
-### Using JSON as an Interface
+### Using JSON as an Interface <a class="anchor" id="fourth-bullet"></a>
 
 JSON as an interface also user's to access properties defined in the JSON schema, and add data that conforms to the schema's specifications, which in turn are submitted to the code behind the interface. **User's only need to understand JSON notation to use the code, or in this case yt. They don't need to know python or yt at all to use those tools in their analysis.** They can simply describe what they want the code to do in the JSON configuration file, and an output is returned.<br><br>**The file is used as its own validation, as users objects that make up the workflow are validated against a JSON schema, either at runtime or (in certain code editors) in real time**. Workflows can be unique to the user but conform to a broad, domain specification, which makes work in the analysis schema ease to create and reproduce. 
     
@@ -106,7 +121,7 @@ JSON as an interface also user's to access properties defined in the JSON schema
 
 ---
 
-### The Analysis Schema
+### The Analysis Schema <a class="anchor" id="fifth-bullet"></a>
 
 ![](images/ytSchemaTitle.png)
 
@@ -134,7 +149,7 @@ While the description are separate from yt, the mental model behind the data sel
 
 ```
 
-### Connecting Existing Software to Declarative Description
+### Connecting Existing Software to Declarative Description <a class="anchor" id="sixth-bullet"></a>
 
 How does the description reach and run the software? The core pieces that the analysis schema functions using data classes, type hinting, and schema models. Analysis Schema also relies on !(Pydantic)[https://github.com/samuelcolvin/pydantic/] to produce the models. **The schema is generated from yt data classes and type annotations, which is then accessed by users to guide and structure their analysis in the JSON interface.** 
 
@@ -153,7 +168,7 @@ Below is the Analysis Schema workflow, where the `Dataset` dataclass is highligh
 
 ```
 
-### Supporting Workflows and Software
+### Supporting Workflows and Software <a class="anchor" id="seventh-bullet"></a>
 
 **The Analysis Schema is designed to make scientific software easier to use, easier to reproduce, and to create a foundational for a structured, analysis grammar.** Supporting individual workflows is the main goal of the analysis - and so we have developed multiple ways to use the schema: in Jupyter, in the command line, and in the browser.
 
@@ -194,18 +209,31 @@ In addition to Jupyter and command line workflows, we are also working towards a
 
 ```
 
+### Future Work <a class="anchor" id="eighth-bullet"></a>
 
-### Domain Contexts - Beyond Astrophysics
+#### Beyond yt
 
-Historically yt was developed for computational astrophysics, but we aim to expand yt's capabilities to support:
+Open source scientific software foster innovation and supports a surge of new tools, which does introduce a sustainability problem for users. It's hard to keep up with new developments and learn new tools. The Analysis Schema is designed to address this problem - any python module can be added to the underlying model. This allows for any packages to be accessed and run in the JSON interface. So users can use JSON sytanx to run any scientific python code.
+
+Here's an example where [napari](https://napari.org/) is access through the JSON interface using VSCode and a Jupyter notebook:
+
+<div align="middle"><video controls src="images/schema_napari.mp4" width="800"/></div>
+
+
+
+#### Beyond Astrophysics
+
+Historically yt was developed for computational astrophysics, and it is our goal to expand yt beyond it's original domain but implementing a domain contexts system. Adding a way for the Analysis Schema to detect and adjust the schema according to the domain the user is working will just users more computational power to answer research questions. 
+
+In the future, we are aiming to expand yt's capabilities to support: 
 
 - __Geophysics__
 - __Neuroimaging__
-- __Weather__
+- __Weather__ 
 - __Climate__
 - __Oceanography__
 
-**Common elements and operations are often used across natural science domains** and we aim to identify and encode those operations into the analysis schema to make yt's visualization and analysis funcationality more accessable.
+**Common elements and operations are often used across natural science domains** and we aim to identify and encode those operations into the analysis schema to make yt's visualization and analysis functionality more accessible. 
 
 Operations of analysis and visualization are often reused across domains including:
 - Loading and registering data into a coordinate system
@@ -213,7 +241,8 @@ Operations of analysis and visualization are often reused across domains includi
 - Methods of transformation
 - Methods of plotting
 
-Once we understand how users from other domains understand and process data, we can add logic to the schema that allow for the language and how yt handles the data to better match what users expect.
+**Once we understand how users from other domains understand and process data, we can add logic to the schema that allow for the language and how yt handles the data to better match what users expect.** 
+
 
 
 #### Check out some geoscience visualization and anlaysis with yt:
@@ -239,7 +268,7 @@ Additional geoscience visualizations at https://github.com/chrishavlin/AGU2020.
 ---
 
 
-## About the Authors
+## About the Authors <a class="anchor" id="nineth-bullet"></a>
 
 <br>
 
