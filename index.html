@@ -17,7 +17,7 @@ body {font-family: "Nanum Gothic"; font-size: 1.25em;}
         <div id="content">
         </div>
     </div>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
   <script>
     const renderer = {
         hr() {
@@ -29,7 +29,7 @@ body {font-family: "Nanum Gothic"; font-size: 1.25em;}
         //fetch('./README.md')
         fetch('./ScientificWorkflowDescription_SciPy2021.md')
         .then(response => response.text())
-        .then(data => {document.getElementById('content').innerHTML = 
+        .then(data => {document.getElementById('content').innerHTML =
                 "<div class='row'><div class='col'>" + marked(data) + "</div></div>";});
     });
   </script>
